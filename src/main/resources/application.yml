@@ -1,1 +1,7 @@
+application:
+  title: Api Gateway Payment
+  description: This Api Payment integrates with enviroment Sandbox of API Cielo's eCommerce
 
+server:
+  servlet:
+    context-path: /api
