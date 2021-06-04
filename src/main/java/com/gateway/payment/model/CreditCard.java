@@ -1,13 +1,20 @@
 package com.gateway.payment.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class CreditCard {
 
-    private String CardNumber;
-    private String Holder;
-    private String ExpirationDate;
-    private String SecurityCode;
-    private String Brand;
+    private String cardNumber;
+
+    private String holder;
+
+    private String expirationDate;
+
+    private String securityCode;
+
+    private String brand;
+
 }

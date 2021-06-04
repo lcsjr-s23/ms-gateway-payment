@@ -1,7 +1,7 @@
 package com.gateway.payment.service;
 
-import com.gateway.payment.model.PaymentDTO;
+import com.gateway.payment.model.TrxPaymentDTO;
 
 public interface PaymentService {
-    PaymentDTO send(PaymentDTO paymentDTO);
+    TrxPaymentDTO send(TrxPaymentDTO paymentDTO);
 }

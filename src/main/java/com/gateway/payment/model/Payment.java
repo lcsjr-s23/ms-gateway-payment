@@ -1,13 +1,20 @@
 package com.gateway.payment.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class Payment {
 
-    private String Type;
-    private float Amount;
-    private float Installments;
-    private String SoftDescriptor;
-    CreditCard CreditCardObject;
+    private String type;
+
+    private Double amount;
+
+    private Integer installments;
+
+    private String softDescriptor;
+
+    private CreditCard creditCard;
+
 }
