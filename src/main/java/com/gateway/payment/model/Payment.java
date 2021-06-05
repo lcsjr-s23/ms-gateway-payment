@@ -1,10 +1,8 @@
 package com.gateway.payment.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 public class Payment {
 
     private String type;

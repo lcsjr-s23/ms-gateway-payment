@@ -1,5 +1,6 @@
 package com.gateway.payment.model.entity;
 
+import lombok.Getter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.Type;
 
@@ -8,6 +9,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Getter
 @MappedSuperclass
 public abstract class BasicEntity implements Serializable {
 

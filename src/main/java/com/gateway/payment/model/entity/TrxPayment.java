@@ -1,10 +1,13 @@
 package com.gateway.payment.model.entity;
 
+import com.gateway.payment.enums.StatusEnum;
 import com.gateway.payment.model.TrxPaymentDTO;
 import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -46,6 +49,9 @@ public class TrxPayment extends BasicEntity {
     @NotNull(message = "Brand cannot be null.")
     private String brand;
 
+    @Enumerated(EnumType.STRING)
+    private StatusEnum status;
+
     public TrxPayment(){}
 
     public TrxPayment(TrxPaymentDTO trxPaymentDTO){
@@ -59,5 +65,6 @@ public class TrxPayment extends BasicEntity {
         this.expirationDate = trxPaymentDTO.getPayment().getCreditCard().getExpirationDate();
         this.securityCode = trxPaymentDTO.getPayment().getCreditCard().getSecurityCode();
         this.brand = trxPaymentDTO.getPayment().getCreditCard().getBrand();
+        this.status = StatusEnum.RECEIVED;
     }
 }

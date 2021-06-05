@@ -1,14 +1,16 @@
 package com.gateway.payment.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 public class TrxPaymentDTO {
+
+    private String id;
 
     private String merchantOrderId;
 
     private Payment payment;
+
+    private String status;
 
 }
