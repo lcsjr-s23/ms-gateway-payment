@@ -17,7 +17,7 @@ This project uses:
    
 2. Clone repository
 ```bash
-https://github.com/lcsjr-s23/ms-gateway-payment.git
+git clone https://github.com/lcsjr-s23/ms-gateway-payment.git
 ```
 
 3. Execute Docker-Compose for run services MySql and RabbitMQ:
@@ -28,3 +28,4 @@ docker-compose -f docker-compose-env.yml up -d --force
 
 ## Usage
 How to use this api
+...
